@@ -28,16 +28,18 @@ Pada tugas ini, saya mempelajari bagaimana menerapkan **Action** dan **Assertion
 ---
 ## Contoh Action di Cypress
 
-``javascript
+```javascript
 cy.get('input[name="name"]').type("Labib Faruq");
 cy.get('input[data-qa="email"]').type("labib@example.com");
 cy.get('button[type="submit"]').click();
 cy.get('select').select('Option 1');
+```
 
 ## Contoh Assertion di Cypress
 
-``javascript
+```javascript
 cy.url().should('include', '/contact_us'); // Verifikasi URL
 cy.get('.title.text-center').should('contain.text', 'Contact Us'); // Verifikasi teks
 cy.get('input[name="email"]').should('have.value', 'labib@example.com'); // Verifikasi input
 cy.get('.alert-success').should('exist'); // Verifikasi elemen muncul
+```
